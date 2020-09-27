@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/wood2"
+    android:fitsSystemWindows="true"
+    tools:context="com.sm.xmediaplayer.English_mp3_player"
+    >
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/floating_button"
+        android:id="@+id/include" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btfb"
+        android:layout_width="100dp"
+        android:layout_height="96dp"
+        android:layout_gravity="top|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_media_rew"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center_vertical|left"
+        app:backgroundTint="@android:color/holo_green_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btprev"
+        android:layout_width="100dp"
+        android:layout_height="94dp"
+        android:layout_gravity="bottom|right"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_media_previous"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center_vertical|left"
+        app:backgroundTint="@android:color/holo_green_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btnext"
+        android:layout_width="93dp"
+        android:layout_height="99dp"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_media_next"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center_vertical|right"
+        android:layout_gravity="bottom|left"
+        app:backgroundTint="@android:color/holo_green_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btplay"
+        android:layout_width="123dp"
+        android:layout_height="121dp"
+        android:layout_gravity="center_vertical|center_horizontal"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_media_play"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center_vertical|center_horizontal"
+        app:backgroundTint="@color/colorPrimaryDark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/btff"
+        android:layout_width="96dp"
+        android:layout_height="96dp"
+        android:layout_gravity="top|left"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@android:drawable/ic_media_ff"
+        app:layout_anchor="@+id/include"
+        app:layout_anchorGravity="center_vertical|right"
+        app:backgroundTint="@android:color/holo_green_dark" />
+
+    <SeekBar
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/seekBar"
+        android:layout_marginTop="450sp"
+        android:background="@color/colorPrimaryDark" />
+
+</android.support.design.widget.CoordinatorLayout>

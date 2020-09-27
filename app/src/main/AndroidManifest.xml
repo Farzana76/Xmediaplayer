@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.sm.xmediaplayer">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.Light.DarkActionBar">
+        <activity android:name=".Welcome_screen">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".English_menu" />
+        <activity android:name=".English_help" />
+        <activity android:name=".English_language" />
+        <activity android:name=".English_song_playlist" />
+        <activity android:name=".English_subtitle" />
+        <activity android:name=".English_mp3_player" />
+        <activity android:name=".English_video_playlist" />
+        <activity android:name=".English_mp4_player" />
+        <activity android:name=".Bangla_menu" />
+        <activity android:name=".Bangla_song_playlist" />
+        <activity android:name=".Bangla_video_playlist" />
+        <activity android:name=".Bangla_language" />
+        <activity android:name=".Bangla_help" />
+        <activity android:name=".Bangla_subtitle" />
+        <activity android:name=".Bangla_mp3_player" />
+        <activity android:name=".Bangla_mp4_player" />
+        <activity android:name=".English_movie_review" />
+        <activity android:name=".Bangla_movie_review" />
+        <activity android:name=".English_youtube" />
+        <activity android:name=".Bangla_youtube"></activity>
+    </application>
+
+</manifest>

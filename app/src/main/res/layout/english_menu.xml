@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/background_dark"
+    android:weightSum="1">
+
+
+    <Button
+        android:text="Language"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/language"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="64dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="18sp"
+        android:layout_alignRight="@+id/help"
+        android:layout_alignEnd="@+id/help"
+        android:layout_alignLeft="@+id/help"
+        android:layout_alignStart="@+id/help" />
+
+    <TextView
+        android:text="            Menu"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="60sp"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:textSize="40sp" />
+
+    <Button
+        android:text="Video playlist"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/vplaylist"
+        android:layout_width="270sp"
+        android:layout_height="40sp"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:textSize="18sp" />
+
+    <Button
+        android:text="Help"
+        android:layout_width="wrap_content"
+        android:id="@+id/help"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+
+        android:layout_marginBottom="22dp"
+        android:textSize="18sp"
+        android:layout_height="40sp"
+        android:layout_above="@+id/language"
+        android:layout_alignLeft="@+id/youtube"
+        android:layout_alignStart="@+id/youtube"
+        android:layout_alignRight="@+id/youtube"
+        android:layout_alignEnd="@+id/youtube" />
+
+    <Button
+        android:text="Review"
+        android:layout_width="wrap_content"
+        android:id="@+id/rev"
+        android:background="@drawable/wood2"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"
+        android:layout_below="@+id/video"
+        android:layout_marginBottom="235sp"
+        android:layout_marginTop="10sp"
+        android:layout_alignRight="@+id/vplaylist"
+        android:layout_alignEnd="@+id/vplaylist"
+        android:layout_alignLeft="@+id/video"
+        android:layout_alignStart="@+id/video" />
+
+    <Button
+        android:text="Song Playlist"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:id="@+id/playlist"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="10dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/vplaylist"
+        android:layout_alignLeft="@+id/vplaylist"
+        android:layout_alignStart="@+id/vplaylist"
+        android:layout_alignRight="@+id/vplaylist"
+        android:layout_alignEnd="@+id/vplaylist" />
+
+    <Button
+        android:text="Subtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/video"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="11dp"
+        android:textSize="18sp"
+        android:layout_below="@+id/playlist"
+        android:layout_alignLeft="@+id/playlist"
+        android:layout_alignStart="@+id/playlist"
+        android:layout_alignRight="@+id/playlist"
+        android:layout_alignEnd="@+id/playlist" />
+
+    <Button
+        android:text="Youtube Video"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/youtube"
+        android:layout_above="@+id/help"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        android:layout_alignParentTop="true"
+        android:layout_marginBottom="15sp"
+        android:layout_marginTop="320sp"
+        android:layout_alignLeft="@+id/rev"
+        android:layout_alignStart="@+id/rev"
+        android:layout_alignRight="@+id/rev"
+        android:layout_alignEnd="@+id/rev" />
+
+
+</RelativeLayout>

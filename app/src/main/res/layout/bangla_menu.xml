@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bangla_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@android:color/black"
+    tools:context="com.sm.xmediaplayer.Bangla_menu">
+
+    <Button
+        android:text="গানের তালিকা"
+        android:layout_width="wrap_content"
+        android:layout_height="40sp"
+        android:id="@+id/playlist1"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="140dp"
+        android:layout_marginRight="100dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <Button
+        android:text="ভাষা"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:id="@+id/language1"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:layout_marginBottom="50dp"
+        android:layout_marginLeft="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textSize="30sp" />
+
+    <TextView
+        android:text="         মেনু"
+        android:layout_width="match_parent"
+        android:id="@+id/textView"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_height="60sp"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:textSize="50sp" />
+
+    <Button
+        android:text="ভিডিও তালিকা"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="18dp"
+        android:id="@+id/vplaylist1"
+        android:layout_width="270sp"
+        android:layout_height="50sp"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_alignLeft="@+id/playlist1"
+        android:layout_alignStart="@+id/playlist1"
+        android:layout_alignRight="@+id/playlist1"
+        android:layout_alignEnd="@+id/playlist1" />
+
+    <Button
+        android:text="সহায়তা"
+        android:layout_width="wrap_content"
+        android:id="@+id/help1"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+
+        android:layout_marginBottom="5dp"
+        android:textSize="30sp"
+        android:layout_height="40sp"
+        android:layout_above="@+id/language1"
+        android:layout_alignLeft="@+id/language1"
+        android:layout_alignStart="@+id/language1"
+        android:layout_alignRight="@+id/language1"
+        android:layout_alignEnd="@+id/language1" />
+
+    <Button
+        android:text="রিভিউ"
+        android:layout_width="wrap_content"
+        android:id="@+id/rev1"
+        android:background="@drawable/wood2"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginBottom="220sp"
+        android:layout_marginTop="238sp"
+        android:layout_alignLeft="@+id/help1"
+        android:layout_alignStart="@+id/help1"
+        android:layout_alignRight="@+id/video1"
+        android:layout_alignEnd="@+id/video1" />
+
+    <Button
+        android:text=" সাবটাইটেল "
+        android:layout_width="wrap_content"
+        android:layout_height="42dp"
+        android:id="@+id/video1"
+        android:background="@drawable/wood2"
+        android:textColor="@android:color/white"
+        android:layout_marginTop="9dp"
+        android:textSize="30sp"
+        android:layout_below="@+id/playlist1"
+        android:layout_alignLeft="@+id/playlist1"
+        android:layout_alignStart="@+id/playlist1"
+        android:layout_alignRight="@+id/playlist1"
+        android:layout_alignEnd="@+id/playlist1" />
+
+    <Button
+        android:text="ইউটিউব ভিডিও"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/help1"
+        android:id="@+id/youtube"
+        android:background="@drawable/wood2"
+        android:layout_alignTop="@+id/rev1"
+        android:textColor="@android:color/white"
+        android:textSize="30sp"
+        android:layout_marginTop="80sp"
+        android:layout_marginBottom="15sp"
+        android:layout_alignLeft="@+id/help1"
+        android:layout_alignStart="@+id/help1"
+        android:layout_alignRight="@+id/help1"
+        android:layout_alignEnd="@+id/help1" />
+
+
+</RelativeLayout>
